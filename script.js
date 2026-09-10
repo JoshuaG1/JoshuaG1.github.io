@@ -76,13 +76,13 @@ const translations = {
             miniLabel: "INGENIERÍA MECATRÓNICA",
 
             title: `
-                No quiero solamente
+                Desarrollo soluciones donde
 
                 <span>
-                    diseñarlo.
+                    software y hardware
                 </span>
 
-                Quiero construirlo.
+                trabajan como un solo sistema.
             `,
 
             main:
@@ -158,7 +158,7 @@ const translations = {
 
             cubesatCategory:
                 "SISTEMAS ESPACIALES · CUBESAT",
-                
+
             pythonTitle:
                 "100 Days of Code: Python",
 
@@ -263,7 +263,7 @@ const translations = {
 
         footer: {
             portfolio: "/ PORTAFOLIO",
-            degree: "INGENIERÍA MECATRÓNICA",
+            rights: "TODOS LOS DERECHOS RESERVADOS",
             back: "VOLVER ARRIBA"
         },
 
@@ -345,13 +345,13 @@ const translations = {
             miniLabel: "MECHATRONICS ENGINEERING",
 
             title: `
-                I don't just want to
+                I develop solutions where
 
                 <span>
-                    design it.
+                    software and hardware
                 </span>
 
-                I want to build it.
+                work as a single system.
             `,
 
             main:
@@ -536,7 +536,7 @@ const translations = {
 
         footer: {
             portfolio: "/ PORTFOLIO",
-            degree: "MECHATRONICS ENGINEERING",
+            rights: "ALL RIGHTS RESERVED",
             back: "BACK TO TOP"
         },
 
@@ -1109,9 +1109,10 @@ const projectData = {
             ]
         }
     },
-    
+
+
     /* ========================================================
-    08 - DISCO DE GRAY
+       08 - DISCO DE GRAY
     ======================================================== */
 
     "disco-gray": {
@@ -1788,8 +1789,10 @@ function applyLanguage(language) {
         "#reconocimientos .award-card:nth-child(3) .award-category",
         t.awards.cubesatCategory
     );
+
+
     /* ========================================================
-    PYTHON COURSE
+       PYTHON COURSE
     ======================================================== */
 
     setText(
@@ -1814,7 +1817,7 @@ function applyLanguage(language) {
 
 
     /* ========================================================
-    JAVA BOOTCAMP
+       JAVA BOOTCAMP
     ======================================================== */
 
     setText(
@@ -2078,11 +2081,9 @@ function applyLanguage(language) {
     if (footerMiddle) {
 
         footerMiddle.innerHTML = `
-            ${t.footer.degree} ·
-
-            <span id="currentYear">
+            © <span id="currentYear">
                 ${new Date().getFullYear()}
-            </span>
+            </span> · ${t.footer.rights}
         `;
     }
 
@@ -2118,7 +2119,6 @@ function applyLanguage(language) {
             t.modal.close
         );
     }
-
 
 
     if (
