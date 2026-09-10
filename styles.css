@@ -1178,13 +1178,16 @@ a {
     align-items: center;
 
     font-size:
-        .65rem;
+        .75rem;
+
+    font-weight:
+        600;
 
     letter-spacing:
         .22em;
 
     color:
-        var(--text-muted);
+        #a1a8b7;
 
     margin-bottom:
         60px;
@@ -1193,7 +1196,37 @@ a {
 
 .section-label span {
     color:
-        var(--primary);
+        #a99cff;
+
+    font-family:
+        var(--font-display);
+
+    font-size:
+        .82rem;
+
+    font-weight:
+        700;
+}
+
+
+.section-label::after {
+    content: "";
+
+    width:
+        90px;
+
+    height:
+        1px;
+
+    margin-left:
+        4px;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(169, 156, 255, .9),
+            rgba(169, 156, 255, .08)
+        );
 }
 
 
@@ -1379,7 +1412,8 @@ a {
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction:
+        column;
 
     gap: 13px;
 }
@@ -3463,8 +3497,7 @@ span:not(:last-child)::after {
     color:
         white;
 
-    cursor:
-        pointer;
+    cursor: pointer;
 }
 
 
@@ -4056,6 +4089,15 @@ span:not(:last-child)::after {
     .section-label {
         margin-bottom:
             40px;
+
+        font-size:
+            .69rem;
+    }
+
+
+    .section-label::after {
+        width:
+            55px;
     }
 
 
@@ -4109,7 +4151,6 @@ span:not(:last-child)::after {
         font-size:
             8rem;
     }
-
 
 
     .awards-grid {
@@ -4189,9 +4230,10 @@ span:not(:last-child)::after {
     }
 
 }
+
+
 /* ============================================================
    PROJECT CARDS — VERSION COMPACTA
-   PEGAR AL FINAL DE styles.css
 ============================================================ */
 
 
@@ -4262,13 +4304,7 @@ span:not(:last-child)::after {
 
 
 /*
-    Distribución para 7 proyectos:
-
-    Fila 1: 01 | 02 | 03
-    Fila 2:    04 | 05
-    Fila 3:    06 | 07
-
-    Las últimas dos filas quedan centradas.
+    Distribución original para 7 proyectos.
 */
 
 .projects-grid
@@ -4964,8 +5000,6 @@ span:not(:last-child)::after {
     }
 
 
-    /* Séptima tarjeta centrada. */
-
     .projects-grid
     .project-card:nth-child(7) {
         grid-column:
@@ -5058,6 +5092,8 @@ span:not(:last-child)::after {
     }
 
 }
+
+
 /* ============================================================
    LANGUAGE SWITCH
 ============================================================ */
@@ -5178,6 +5214,7 @@ span:not(:last-child)::after {
 
 }
 
+
 /* ============================================================
    PHOTO-BASED PROJECT CARDS
 ============================================================ */
@@ -5187,13 +5224,14 @@ span:not(:last-child)::after {
 .conveyor-card-image {
     background: #0b0f15;
 }
+
+
 /* ============================================================
    PROJECT GRID
 ============================================================ */
 
 @media (min-width: 1101px) {
 
-    
     .projects-grid
     .project-card:nth-child(4),
 
@@ -5285,6 +5323,8 @@ span:not(:last-child)::after {
     }
 
 }
+
+
 /* ============================================================
    RECOGNITIONS / TRAINING
    5 CARDS — DESKTOP 3 + 2
